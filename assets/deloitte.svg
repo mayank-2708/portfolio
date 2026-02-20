@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="145" viewBox="0 0 600 145" role="img" aria-label="Deloitte logo">
+  <rect width="600" height="145" fill="#ffffff"/>
+  <g fill="#111111">
+    <path d="M55 30h58c34 0 56 19 56 43s-22 42-56 42H55V30zm58 62c19 0 30-8 30-19s-11-20-30-20H82v39h31z"/>
+    <path d="M184 30h27v85h-27V30z"/>
+    <path d="M228 30h27v62h54v23h-81V30z"/>
+    <path d="M314 30h27v85h-27V30z"/>
+    <path d="M352 53V30h93v23h-33v62h-27V53h-33z"/>
+    <path d="M454 30h89v22h-62v11h57v19h-57v11h64v22h-91V30z"/>
+  </g>
+  <circle cx="564" cy="103" r="12" fill="#86bc25"/>
+</svg>
