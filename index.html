@@ -32,7 +32,7 @@
               <div class="text-wrapper">Contact Us</div>
             </div>
             <div class="logo">
-              <div class="priyanshu-jain">Mayank</div>
+              <div class="mayank">Mayank</div>
               <p class="UI-UX-designer-front">MCA Student &amp; Web Development Intern</p>
             </div>
             <div class="social-media">
@@ -44,7 +44,7 @@
               </a>
             </div>
           </div>
-          <p class="hello-its-priyanshu">
+          <p class="hello-its-mayank">
             Hello, It's Mayank.<br />MCA Student &amp; Web Development Intern<br />from Sonipat, Haryana, India
           </p>
           <div class="frame-3">
@@ -297,7 +297,7 @@
           </div>
           <div class="frame-27">
             <div class="logo-2">
-              <div class="priyanshu-jain-2">Mayank</div>
+              <div class="mayank-2">Mayank</div>
               <p class="UI-UX-designer-front">MCA Student &amp; Web Development Intern</p>
             </div>
             <div class="menu">
@@ -314,6 +314,32 @@
     </div>
 
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = Array.from(document.querySelectorAll(".portfolio .div > div"));
+
+      sections.forEach((section, index) => {
+        section.classList.add("scroll-reveal");
+        section.classList.add(index % 2 === 0 ? "reveal-left" : "reveal-right");
+      });
+
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+          });
+        },
+        {
+          threshold: 0.18,
+          rootMargin: "0px 0px -8% 0px",
+        },
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    });
+  </script>
 </body>
 
 </html>

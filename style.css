@@ -362,7 +362,7 @@ html {
   animation: scaleIn 0.6s ease-out forwards;
 }
 
-.portfolio .priyanshu-jain {
+.portfolio .mayank {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -420,7 +420,7 @@ html {
   transform: scale(1.2);
 }
 
-.portfolio .hello-its-priyanshu {
+.portfolio .hello-its-mayank {
   position: absolute;
   width: 791px;
   top: 228px;
@@ -1424,7 +1424,7 @@ html {
   gap: 4px;
 }
 
-.portfolio .priyanshu-jain-2 {
+.portfolio .mayank-2 {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -1791,4 +1791,37 @@ html {
 .download-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+/* Scroll reveal transition */
+.scroll-reveal {
+  opacity: 0;
+  transform: translate3d(0, 48px, 0);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.reveal-left {
+  transform: translate3d(-36px, 48px, 0);
+}
+
+.scroll-reveal.reveal-right {
+  transform: translate3d(36px, 48px, 0);
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal.reveal-left,
+  .scroll-reveal.reveal-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
