@@ -13,36 +13,59 @@
 
 <body>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Mayank Rohilla home">
-      <span class="brand-mark">MR</span>
-      <span>
-        <strong>Mayank</strong>
-        <small>Full-Stack Web Developer</small>
-      </span>
-    </a>
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Mayank Rohilla home">
+        <span class="brand-mark">MR</span>
+        <span>
+          <strong>Mayank</strong>
+          <small>Full-Stack Web Developer</small>
+        </span>
+      </a>
 
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main id="home">
     <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow">MCA Final-Year Student • Web Development Intern</p>
-        <h1>Building responsive web applications with PHP, MySQL, and clean user workflows.</h1>
+        <div class="status-pill">
+          <span></span>
+          Available for internships and entry-level developer roles
+        </div>
+        <p class="eyebrow">MCA Final-Year Student • Full-Stack Web Development Intern</p>
+        <h1>Full-stack developer building practical web systems for real business workflows.</h1>
         <p class="hero-summary">
-          I am a full-stack web development intern from Sonipat, Haryana, with hands-on experience creating business
-          systems, admin dashboards, authentication flows, and database-driven modules for real projects.
+          I create responsive interfaces, PHP/MySQL backends, dashboards, authentication flows, and database-driven
+          modules. My work is focused on clean implementation, reliable CRUD workflows, and simple user experiences.
         </p>
+        <div class="hero-tags" aria-label="Core technologies">
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>JavaScript</span>
+          <span>Bootstrap</span>
+          <span>GitHub</span>
+        </div>
         <div class="hero-actions">
           <a class="button primary" href="#projects">View Projects</a>
           <a class="button secondary" href="./assets/Mayank_cv.pdf" target="_blank" rel="noopener noreferrer">Download
             CV</a>
+        </div>
+        <div class="quick-links" aria-label="Quick contact links">
+          <a href="mailto:mayankrohilla301@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/mayank-2b1394180/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/mayankrohilla301" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
 
@@ -50,7 +73,7 @@
         <img src="./assets/Mayank_pic.JPG" alt="Mayank Rohilla" />
         <div class="profile-card">
           <span>Available for internship and entry-level roles</span>
-          <strong>Full-stack web development</strong>
+          <strong>Mayank</strong>
           <p>PHP • MySQL • JavaScript • Bootstrap</p>
         </div>
       </aside>
@@ -101,18 +124,22 @@
 
       <div class="skill-grid">
         <article class="skill-card">
+          <span class="skill-icon">01</span>
           <h3>Languages</h3>
           <p>JavaScript, Python, SQL, C, PHP</p>
         </article>
         <article class="skill-card">
+          <span class="skill-icon">02</span>
           <h3>Frontend</h3>
           <p>HTML5, CSS3, Bootstrap, responsive layouts</p>
         </article>
         <article class="skill-card">
+          <span class="skill-icon">03</span>
           <h3>Backend</h3>
           <p>PHP, MySQL, authentication, APIs, CRUD modules</p>
         </article>
         <article class="skill-card">
+          <span class="skill-icon">04</span>
           <h3>Tools</h3>
           <p>Git, GitHub, VS Code, Power BI, Excel</p>
         </article>
@@ -170,6 +197,11 @@
             Developed a full-stack system for user registration, login, service booking, admin dashboards, provider
             panels, lead records, booking workflows, reporting, and role-based access control.
           </p>
+          <div class="project-tags">
+            <span>Authentication</span>
+            <span>Admin Dashboard</span>
+            <span>Role Access</span>
+          </div>
         </article>
 
         <article class="project-card">
@@ -180,6 +212,11 @@
             Built a role-based system for student records, attendance, exam management, CRUD operations, dashboard
             reports, and result modules.
           </p>
+          <div class="project-tags">
+            <span>CRUD</span>
+            <span>Reports</span>
+            <span>MySQL</span>
+          </div>
         </article>
 
         <article class="project-card">
@@ -190,6 +227,11 @@
             Created a responsive weather app using the OpenWeather API with live temperature, humidity, weather
             conditions, and input error handling.
           </p>
+          <div class="project-tags">
+            <span>API</span>
+            <span>Responsive UI</span>
+            <span>Error Handling</span>
+          </div>
         </article>
       </div>
     </section>
@@ -205,11 +247,11 @@
           <h3>Education</h3>
           <div class="info-row">
             <span>2024 - 2026</span>
-            <p><strong>Master of Computer Applications</strong>Manav Rachna University, Faridabad • CGPA: 6.09</p>
+            <p><strong>Master of Computer Applications</strong>Manav Rachna University, Faridabad </p>
           </div>
           <div class="info-row">
             <span>2019 - 2024</span>
-            <p><strong>Bachelor of Computer Applications</strong>Panipat Institute of Engineering and Technology • 56.2%
+            <p><strong>Bachelor of Computer Applications</strong>Panipat Institute of Engineering and Technology 
             </p>
           </div>
         </div>
@@ -232,6 +274,9 @@
         <div>
           <p class="eyebrow">Contact</p>
           <h2>Open to internship and entry-level software development opportunities.</h2>
+          <p class="contact-note">
+            Best fit: web development, PHP/MySQL backend, dashboard development, and junior full-stack roles.
+          </p>
         </div>
         <div class="contact-card">
           <a href="mailto:mayankrohilla301@gmail.com">mayankrohilla301@gmail.com</a>
@@ -246,9 +291,55 @@
   </main>
 
   <footer class="site-footer">
-    <span>Mayank Rohilla</span>
+    <span>Mayank </span>
     <span>© 2026 Portfolio</span>
   </footer>
+  <script>
+    const header = document.querySelector(".site-header");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const revealItems = document.querySelectorAll(
+      ".hero-copy, .profile-panel, .stats-band div, .split-section > *, .section-heading, .skill-card, .timeline-item, .project-card, .info-panel, .contact-shell > *",
+    );
+
+    const updateHeader = () => {
+      header.classList.toggle("is-scrolled", window.scrollY > 12);
+    };
+
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = header.classList.toggle("menu-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        header.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    revealItems.forEach((item, index) => {
+      item.classList.add("reveal-item");
+      item.style.setProperty("--delay", `${Math.min(index * 55, 420)}ms`);
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.16, rootMargin: "0px 0px -8% 0px" },
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  </script>
 </body>
 
 </html>
